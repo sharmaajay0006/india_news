@@ -82,7 +82,7 @@ const News = (props) => {
             <Spinner />
           </Box>
         ) : (
-          news.articles.map((article, index) => {
+          news.articles?.map((article, index) => {
             return (
               <Grid item xs={2} sm={4} md={4} key={index}>
                 <Box

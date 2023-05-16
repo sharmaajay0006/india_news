@@ -41,7 +41,7 @@ function DrawerAppBar(props) {
       </Typography>
       <Divider />
       <List>
-        {navItems.map((item) => (
+        {navItems?.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
               <ListItemText
@@ -80,7 +80,7 @@ function DrawerAppBar(props) {
             India News
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            {navItems.map((item) => (
+            {navItems?.map((item) => (
               <Button
                 className="activeButton"
                 key={item}
